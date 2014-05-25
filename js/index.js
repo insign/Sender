@@ -1,15 +1,16 @@
 $w = window;
+function index_init() {
+    jQuery(document).ready(function($) {
+        $w.$debug = true;
+        $w.$body = $('body');
+        $w.$html = $('html');
+        $w.battery = {};
 
-jQuery(document).ready(function($) {
-    $w.$debug = true;
-    $w.$body = $('body');
-    $w.$html = $('html');
-    $w.battery = {};
-
-    init.rotinas();
-    init.comandos();
-    sender.init();
-});
+        init.rotinas();
+        init.comandos();
+        sender.init();
+    });
+}
 
 function toggleServer() {
     $body.toggleClass('started');
