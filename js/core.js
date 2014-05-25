@@ -16,6 +16,7 @@ var app = {
 
     },
     onDeviceReady: function() {
+        alert('ready!');
         app.receivedEvent('deviceready');
     },
     onPause: function() {
