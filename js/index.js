@@ -17,13 +17,16 @@ function toggleServer() {
     var number = '559881970910';
     var message = 'Estou esperando';
     var intent = "INTENT"; //leave empty for sending sms using default intent
-    var success = function() {
-        alert('Message sent successfully');
+    var success = function(r) {
+        alert('Message sent successfully ' + r);
     };
     var error = function(e) {
         alert('Message Failed:' + e);
     };
-    sms.send(number, message, intent, success, error);
+//    sms.send(number, message, intent, success, error);
+
+    var smsplugin = cordova.require("info.asankan.phonegap.smsplugin.smsplugin");
+    smsplugin.send(number, message, successCallback(result), failureCallback(error));
 }
 
 var init = {

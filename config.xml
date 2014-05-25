@@ -27,7 +27,7 @@
     <gap:plugin name="org.apache.cordova.vibration" />
 
     <gap:plugin name="nl.x-services.plugins.toast" />
-    <gap:plugin name="tr.bel.mamak.sms_plagin" />
+    <gap:plugin name="info.asankan.phonegap.smsplugin" version="0.1.0" />
 
     <icon src="res/icon/high.png" />
 
