@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget id= "me.sensy.sender" versionCode="2" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Sender</name>
+    <description>
+        A always beta message sharing system
+    </description>
+
+    <author href="http://sensy.me" email="contact@sensy.me">
+        Sensy Software
+    </author>
+
+    <gap:platform name="android" />
+
+    <preference name="phonegap-version" value="3.3.0" />
+    <preference name="fullscreen" value="false" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="orientation" value="portrait" />
+    <preference name="android-installLocation" value="auto" />
+
+    <!-- Core plugins -->
+    <gap:plugin name="org.apache.cordova.battery-status" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.media" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+
+    <gap:plugin name="nl.x-services.plugins.toast" />
+
+    <icon src="res/icon/high.png" />
+
+    <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
+
+    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+
+    <access origin="*" />
+
+</widget>
