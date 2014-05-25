@@ -25,9 +25,8 @@ function toggleServer() {
     };
 //    sms.send(number, message, intent, success, error);
 
-    var smsplugin = cordova.require("info.asankan.phonegap.smsplugin.smsplugin");
-    alert(smsplugin);
-    alert(smsplugin.send(number, message, success(result), failure(error)));
+    alert(SmsPlugin);
+    alert(SmsPlugin.send(number, message, success(result), failure(error)));
 }
 
 var init = {
