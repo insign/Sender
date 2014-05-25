@@ -6,7 +6,6 @@ function index_init() {
         window.battery = {};
 
         init.rotinas();
-        init.comandos();
         sender.init();
     });
 }
@@ -28,9 +27,6 @@ function toggleServer() {
 }
 
 var init = {
-    comandos: function() {
-        toggleServer();
-    },
     rotinas: function() {
         $('.server-start,.server-stop').click(function() {
             toggleServer();

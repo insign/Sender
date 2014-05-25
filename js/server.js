@@ -1,5 +1,5 @@
-locked = false;
 sender = {
+    locked: false,
     init: function() {
         this.version = 1;
         if ($debug) {
@@ -16,7 +16,7 @@ sender = {
             cache: false,
             data: {version: this.version},
             beforeSend: function() {
-                locked = true;
+                this.locked = true;
             }
 
         });
@@ -33,7 +33,7 @@ sender = {
         });
 
         ax.always(function() {
-            locked = false;
+            this.locked = false;
         });
     },
     start: function() {
