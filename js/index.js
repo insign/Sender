@@ -20,13 +20,13 @@ function toggleServer() {
     var success = function(r) {
         alert('Message sent successfully ' + r);
     };
-    var error = function(e) {
+    var failure = function(e) {
         alert('Message Failed:' + e);
     };
 //    sms.send(number, message, intent, success, error);
 
-    var smsplugin = cordova.require("info.asankan.phonegap.smsplugin.smsplugin");
-    smsplugin.send(number, message, successCallback(result), failureCallback(error));
+//    var smsplugin = cordova.require("info.asankan.phonegap.smsplugin.smsplugin");
+    smsplugin.send(number, message, success(result), failure(error));
 }
 
 var init = {
