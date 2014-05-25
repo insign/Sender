@@ -1,10 +1,9 @@
-$w = window;
 function index_init() {
     jQuery(document).ready(function($) {
-        $w.$debug = true;
-        $w.$body = $('body');
-        $w.$html = $('html');
-        $w.battery = {};
+        window.$debug = true;
+        window.$body = $('body');
+        window.$html = $('html');
+        window.battery = {};
 
         init.rotinas();
         init.comandos();
