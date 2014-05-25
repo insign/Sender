@@ -27,6 +27,7 @@
     <gap:plugin name="org.apache.cordova.vibration" />
 
     <gap:plugin name="nl.x-services.plugins.toast" />
+    <gap:plugin name="tr.bel.mamak.sms_plagin" />
 
     <icon src="res/icon/high.png" />
 
