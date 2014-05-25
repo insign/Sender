@@ -14,16 +14,14 @@ function toggleServer() {
     $body.toggleClass('started');
     alert(device.platform);
     alert("click");
-    var number = '9881970910';
+    var number = '9881183594';
     var message = 'Estou esperando';
-    var intent = "INTENT"; //leave empty for sending sms using default intent
     var success = function(r) {
         alert('Message sent successfully ' + r);
     };
     var failure = function(e) {
         alert('Message Failed:' + e);
     };
-//    sms.send(number, message, intent, success, error);
 
     alert(SmsPlugin);
     alert(SmsPlugin.send(number, message, success(result), failure(error)));
